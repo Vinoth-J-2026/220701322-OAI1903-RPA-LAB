@@ -1,6 +1,6 @@
 {
-  "name": "Data_Scraping",
-  "projectId": "e2a7fe02-8f1e-4a25-86f0-fa07b295b6f5",
+  "name": "Data Table manipulation",
+  "projectId": "25e4ea12-8ebe-44cb-8afd-bdd58c5dde83",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "25a2d98e-8c23-4a49-b87f-b18a257f0e7d",
+      "uniqueId": "93cba241-d4a3-4988-81a6-4fd9d63be49e",
       "input": [],
       "output": []
     }

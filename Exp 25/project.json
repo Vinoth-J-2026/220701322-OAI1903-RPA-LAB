@@ -1,6 +1,6 @@
 {
-  "name": "Workbook",
-  "projectId": "8ed20d9e-ced5-4cba-bd7e-3ca93cbfdfe5",
+  "name": "Screen Scraping",
+  "projectId": "409c9af8-2452-461e-bb9b-9ba39bcc0bcd",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -44,14 +44,14 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true,
+    "modernBehavior": false,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "5a098e68-9ac2-4cbb-9e59-9b2f6a1a6494",
+      "uniqueId": "d9f3074e-7921-42f8-ab68-a1e9212f61cc",
       "input": [],
       "output": []
     }

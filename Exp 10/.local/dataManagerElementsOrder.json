@@ -12,8 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "intGuessedNo&Sequence_1",
-        "intRandomNo&Sequence_1"
+        "dt_DataTable&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

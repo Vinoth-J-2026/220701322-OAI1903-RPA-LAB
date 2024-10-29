@@ -14,7 +14,7 @@ using UiPath.UIAutomationNext.API.Models;
 using UiPath.UIAutomationNext.Enums;
 using UiPath.CodedWorkflows.DescriptorIntegration;
 
-namespace Data_Scraping
+namespace DataTablemanipulation
 {
     public partial class CodedWorkflow : CodedWorkflowBase
     {
@@ -31,14 +31,14 @@ namespace Data_Scraping
     }
 }
 
-namespace Data_Scraping.ObjectRepository
+namespace DataTablemanipulation.ObjectRepository
 {
     public static class Descriptors
     {
     }
 }
 
-namespace Data_Scraping._Implementation
+namespace DataTablemanipulation._Implementation
 {
     internal class ScreenDescriptorDefinition : IScreenDescriptorDefinition
     {

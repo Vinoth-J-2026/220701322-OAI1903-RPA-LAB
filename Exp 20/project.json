@@ -1,6 +1,6 @@
 {
-  "name": "List",
-  "projectId": "baf9f5d1-4f66-41d6-8161-955eaa22991e",
+  "name": "Data conversion",
+  "projectId": "ff104e99-0949-4000-a6e3-d2f2edb412a5",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "0b23dbd2-b7e4-4e48-8725-527e62d99759",
+      "uniqueId": "48b11089-5b91-43c3-a26e-67a5f21d98f0",
       "input": [],
       "output": []
     }

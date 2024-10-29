@@ -12,9 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "text3&Sequence_1",
-        "text2&Sequence_1",
-        "text1&Sequence_1"
+        "EyeColour&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

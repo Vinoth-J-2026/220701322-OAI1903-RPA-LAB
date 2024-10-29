@@ -1,6 +1,6 @@
 {
-  "name": "While",
-  "projectId": "9fb4659b-b9da-4dc9-bb1b-6bb05a70c10d",
+  "name": "Debugging Selector",
+  "projectId": "327641c1-10c1-4d51-ab3a-5ae5f3613730",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "14084b68-7f23-4418-bc3a-5d911b815d05",
+      "uniqueId": "2fd57ed1-480d-4dc8-b1a3-52e677cf7dc9",
       "input": [],
       "output": []
     }

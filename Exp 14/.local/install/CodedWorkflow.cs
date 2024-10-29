@@ -14,13 +14,13 @@ using UiPath.UIAutomationNext.API.Models;
 using UiPath.UIAutomationNext.Enums;
 using UiPath.CodedWorkflows.DescriptorIntegration;
 
-namespace LoopinFlowchart
+namespace DoWhileActivity
 {
     public partial class CodedWorkflow : CodedWorkflowBase
     {
         public CodedWorkflow()
         {
-            _ = new System.Type[]{typeof(UiPath.Testing.API.ITestingService), typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService), typeof(UiPath.Core.Activities.API.ISystemService)};
+            _ = new System.Type[]{typeof(UiPath.Core.Activities.API.ISystemService), typeof(UiPath.UIAutomationNext.API.Contracts.IUiAutomationAppService), typeof(UiPath.Testing.API.ITestingService)};
         }
 
         protected UiPath.Core.Activities.API.ISystemService system { get => serviceContainer.Resolve<UiPath.Core.Activities.API.ISystemService>(); }
@@ -31,14 +31,14 @@ namespace LoopinFlowchart
     }
 }
 
-namespace LoopinFlowchart.ObjectRepository
+namespace DoWhileActivity.ObjectRepository
 {
     public static class Descriptors
     {
     }
 }
 
-namespace LoopinFlowchart._Implementation
+namespace DoWhileActivity._Implementation
 {
     internal class ScreenDescriptorDefinition : IScreenDescriptorDefinition
     {

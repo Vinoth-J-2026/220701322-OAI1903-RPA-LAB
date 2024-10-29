@@ -1,6 +1,6 @@
 {
-  "name": "Parallel Activity",
-  "projectId": "360bf447-3a5d-4e16-9bac-2739e302d169",
+  "name": "Switch Activity",
+  "projectId": "57f849f8-9f6f-4cd4-82d2-751dfa009cf0",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "f2199fa8-c273-4fcb-aa1d-e7e0ff75223a",
+      "uniqueId": "4ad47545-2ed7-433a-838c-f7b555729497",
       "input": [],
       "output": []
     }

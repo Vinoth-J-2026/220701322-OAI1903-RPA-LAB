@@ -12,8 +12,9 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "newSentence&Sequence_1",
-        "newText&Sequence_1"
+        "number&Flowchart_1",
+        "Chance&Flowchart_1",
+        "name&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

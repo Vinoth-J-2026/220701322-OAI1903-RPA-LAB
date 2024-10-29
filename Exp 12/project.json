@@ -1,6 +1,6 @@
 {
-  "name": "For each",
-  "projectId": "e3e48fd9-0646-4984-85e5-f6b772089ac2",
+  "name": "If Activity",
+  "projectId": "87a0a819-4c17-4400-9772-451976c39aa3",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "e4fc6e54-07ea-42b2-8bdd-000c73328599",
+      "uniqueId": "c1eabacd-cc5f-4a37-923c-3722c79d92b8",
       "input": [],
       "output": []
     }

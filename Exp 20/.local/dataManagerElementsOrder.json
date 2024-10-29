@@ -12,10 +12,9 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "allcitiesProperCase&Sequence_1",
-        "allcities&Sequence_1",
-        "ukcities&Sequence_1",
-        "spainCities&Sequence_1"
+        "year&Sequence_1",
+        "age&Sequence_1",
+        "name&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

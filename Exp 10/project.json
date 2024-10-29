@@ -1,11 +1,12 @@
 {
-  "name": "Do While Activity",
-  "projectId": "99cd30c8-cd05-4b51-953a-683efa897e30",
+  "name": "Anchors",
+  "projectId": "8af6dcb0-9ef9-467b-bf52-1d95124381f7",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.PDF.Activities": "[3.19.1]",
     "UiPath.System.Activities": "[23.10.5]",
     "UiPath.Testing.Activities": "[23.10.1]",
     "UiPath.UIAutomation.Activities": "[23.10.7]"
@@ -51,7 +52,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "543bfaa5-0264-4fdd-a3ae-7f8eaede1b12",
+      "uniqueId": "c6794f0f-c90a-421d-96b5-b5a97b83adb2",
       "input": [],
       "output": []
     }

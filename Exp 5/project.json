@@ -1,6 +1,6 @@
 {
-  "name": "web recording",
-  "projectId": "f49ed9c9-79aa-422e-bbb6-588bb4a2d15e",
+  "name": "Hello World",
+  "projectId": "c0fd8a1d-34eb-464a-9972-921206cdde9f",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "5ba62957-24e1-455b-9429-4c2953056239",
+      "uniqueId": "c1e223c5-1be1-4876-8ddc-0429a3d0b517",
       "input": [],
       "output": []
     }

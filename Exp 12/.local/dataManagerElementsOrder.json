@@ -12,9 +12,7 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "variable1&Sequence_1",
-        "Filelist&Sequence_1",
-        "FolderName&Sequence_1"
+        "UserInput&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

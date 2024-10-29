@@ -1,6 +1,6 @@
 {
-  "name": "String Manipulation 1",
-  "projectId": "c0f7ec24-b6a5-4c83-be03-6edee9c757e4",
+  "name": "Parallel Activity",
+  "projectId": "360bf447-3a5d-4e16-9bac-2739e302d169",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "a24864b1-c97a-48fe-a03d-4febb4d4af56",
+      "uniqueId": "f2199fa8-c273-4fcb-aa1d-e7e0ff75223a",
       "input": [],
       "output": []
     }

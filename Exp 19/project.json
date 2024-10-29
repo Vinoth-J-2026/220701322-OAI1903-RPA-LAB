@@ -1,6 +1,6 @@
 {
-  "name": "Data Table manipulation",
-  "projectId": "25e4ea12-8ebe-44cb-8afd-bdd58c5dde83",
+  "name": "Try Catch",
+  "projectId": "205b4aaa-610c-4f01-b629-503798f86d37",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "93cba241-d4a3-4988-81a6-4fd9d63be49e",
+      "uniqueId": "bada45f5-26b8-4714-b876-7546f9945941",
       "input": [],
       "output": []
     }

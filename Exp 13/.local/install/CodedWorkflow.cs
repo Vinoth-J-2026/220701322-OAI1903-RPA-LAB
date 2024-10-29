@@ -14,7 +14,7 @@ using UiPath.UIAutomationNext.API.Models;
 using UiPath.UIAutomationNext.Enums;
 using UiPath.CodedWorkflows.DescriptorIntegration;
 
-namespace ParallelActivity
+namespace SwitchActivity
 {
     public partial class CodedWorkflow : CodedWorkflowBase
     {
@@ -31,14 +31,14 @@ namespace ParallelActivity
     }
 }
 
-namespace ParallelActivity.ObjectRepository
+namespace SwitchActivity.ObjectRepository
 {
     public static class Descriptors
     {
     }
 }
 
-namespace ParallelActivity._Implementation
+namespace SwitchActivity._Implementation
 {
     internal class ScreenDescriptorDefinition : IScreenDescriptorDefinition
     {

@@ -12,7 +12,9 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "dt_DataTable&Sequence_1"
+        "Swapping_support&Sequence_1",
+        "Second_input_value&Sequence_1",
+        "First_input_value&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

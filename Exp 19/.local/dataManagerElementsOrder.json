@@ -12,11 +12,11 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "DataTable&Sequence_1",
-        "dt_outcome&Sequence_1",
-        "dt_borrowedBook&Sequence_1",
-        "dt_overdueBook&Sequence_1",
-        "dt_user&Sequence_1"
+        "Name&Sequence_1",
+        "inputError&Sequence_1",
+        "YearOfBirth&Sequence_1",
+        "Age&Sequence_1",
+        "Gender&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

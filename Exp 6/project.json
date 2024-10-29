@@ -1,12 +1,11 @@
 {
-  "name": "Anchors",
-  "projectId": "8af6dcb0-9ef9-467b-bf52-1d95124381f7",
+  "name": "Variable swapping",
+  "projectId": "29248a30-d40b-4656-b4cd-2c9e675e8bc6",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.Mail.Activities": "[1.21.1]",
-    "UiPath.PDF.Activities": "[3.19.1]",
     "UiPath.System.Activities": "[23.10.5]",
     "UiPath.Testing.Activities": "[23.10.1]",
     "UiPath.UIAutomation.Activities": "[23.10.7]"
@@ -52,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "c6794f0f-c90a-421d-96b5-b5a97b83adb2",
+      "uniqueId": "3d1dcab6-cb06-4c78-bc59-8baba94bc3be",
       "input": [],
       "output": []
     }

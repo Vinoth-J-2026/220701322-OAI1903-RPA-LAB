@@ -1,6 +1,6 @@
 {
-  "name": "Screen Scraping 2",
-  "projectId": "5a4a7e0a-09cf-40bb-b5ce-5cb6368cd268",
+  "name": "String Manipulation 2",
+  "projectId": "2c721e84-22a3-4202-ac6c-4618969a4088",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "50ba816c-3075-41d8-b0f1-705ea8a7a11d",
+      "uniqueId": "3287cea2-293e-401a-b394-08815955384c",
       "input": [],
       "output": []
     }

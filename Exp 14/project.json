@@ -1,6 +1,6 @@
 {
-  "name": "Loop in Flowchart",
-  "projectId": "f2df30e4-9773-4f14-bdaa-77574f85e32a",
+  "name": "Do While Activity",
+  "projectId": "99cd30c8-cd05-4b51-953a-683efa897e30",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -51,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "d8f6287d-4d87-453d-9bf1-305747251def",
+      "uniqueId": "543bfaa5-0264-4fdd-a3ae-7f8eaede1b12",
       "input": [],
       "output": []
     }

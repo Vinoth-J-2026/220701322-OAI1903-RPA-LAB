@@ -12,8 +12,9 @@
       "Path": "Main.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "ImgDimgThUztcnpzw&Sequence_6",
-        "imagetext&Sequence_3"
+        "place&Sequence_1",
+        "study&Sequence_1",
+        "message&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],

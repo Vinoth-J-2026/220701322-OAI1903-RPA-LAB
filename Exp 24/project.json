@@ -1,13 +1,11 @@
 {
-  "name": "Pdf Extraction",
-  "projectId": "747f2e04-31f5-42f4-ac89-a3a8776f7eb1",
+  "name": "List",
+  "projectId": "baf9f5d1-4f66-41d6-8161-955eaa22991e",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
     "UiPath.Mail.Activities": "[1.21.1]",
-    "UiPath.OCR.Activities": "[3.21.1]",
-    "UiPath.PDF.Activities": "[3.20.1]",
     "UiPath.System.Activities": "[23.10.5]",
     "UiPath.Testing.Activities": "[23.10.1]",
     "UiPath.UIAutomation.Activities": "[23.10.7]"
@@ -53,7 +51,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "350eaf73-3778-47cb-aa12-751273589b6c",
+      "uniqueId": "0b23dbd2-b7e4-4e48-8725-527e62d99759",
       "input": [],
       "output": []
     }
