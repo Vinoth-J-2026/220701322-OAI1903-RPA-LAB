@@ -1,0 +1,547 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>869.6,8681.6</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence-Parent" sap:VirtualizedContainerService.HintSize="870.4,8616.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="SavingsBalance" />
+      <Variable x:TypeArguments="x:Int32" Name="TradingBalance" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="flag" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Sequence-Check Saving Account" sap:VirtualizedContainerService.HintSize="808,2507.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="medi" Name="SavingsUserid" />
+        <Variable x:TypeArguments="x:String" Default="medi" Name="SavingsMpin" />
+        <Variable x:TypeArguments="x:String" Name="check" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="Use Application: New Tab - Ulaa" sap:VirtualizedContainerService.HintSize="606.4,2395.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572.8,2104" sap2010:WorkflowViewState.IdRef="Sequence_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reload'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="114, 64, 43, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Reload'" FullSelectorArgument="&lt;ctrl name='localhost/ip/project/login.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='localhost/ip/project/login.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" Guid="ae1b5d9f-3e38-4c23-98cf-8c2234e9cdf6" InformativeScreenshot="3d9fcd5fc3b295ef347b39076c3a53fe.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/login.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="69, 64, 43, 43" ElementType="Button" FriendlyName="'Forward'" FullSelectorArgument="&lt;ctrl name='localhost/ip/project/login.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Forward' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='localhost/ip/project/login.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Forward' role='push button' automationid='' check:text='Forward' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'UserId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510.4,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Text="[SavingsUserid]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="887, 648, 236, 37" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='Enter Your UserId' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Enter Your UserId' role='editable text' automationid='' /&gt;" Guid="b22f6f64-f89e-4cae-b818-0b8b2fb49314" InformativeScreenshot="1bb0b7c07ad9f4e08f6b0cf6c6497707.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/login.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="815, 652, 73, 28" ElementType="Text" FriendlyName="'UserId'" FullSelectorArgument="&lt;ctrl name='UserId:  ' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='UserId:  ' role='text' automationid='' check:text='UserId:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Mpin'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510.4,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Text="[SavingsMpin]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="887, 714, 236, 37" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='Enter Your Mpin' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Enter Your Mpin' role='editable text' automationid='' /&gt;" Guid="6f56e6da-9292-4e97-8c6b-cc20c05b273d" InformativeScreenshot="ae3ae751d984fc3f75855526827080c0.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/login.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="815, 718, 73, 28" ElementType="Text" FriendlyName="'Mpin'" FullSelectorArgument="&lt;ctrl name='Mpin:    ' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Mpin:    ' role='text' automationid='' check:text='Mpin:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1042, 781, 81, 30" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;ctrl name='Login' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Login' role='push button' automationid='' check:text='Login' /&gt;" Guid="d2d2007b-cac1-465d-b332-29aa83930cd7" InformativeScreenshot="927a77a0fe426d5a7538589b1ac44426.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/login.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="932, 205, 74, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;ctrl name='Next' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Next' role='push button' automationid='' check:text='Next' /&gt;" Guid="49704bba-44db-4249-b2dd-e70d3dd1762d" InformativeScreenshot="eb96dfc610fc90b84a61186825f032ef.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/verify.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="9, 155, 1920, 30" FriendlyName="'Login Successful'" FullSelectorArgument="&lt;ctrl idx='3' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='' role='grouping' check:text='Login Successful' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text 'Welcome Vinoth'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" TextString="[check]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="688, 424, 214, 59" DesignTimeScaleFactor="1.25" FriendlyName="'Account Balance: '" FullSelectorArgument="&lt;ctrl name='?? Account Balance:         $200000' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl role='grouping' automationid='' /&gt;" Guid="1789c94b-0fe9-4521-8b0a-4339d0855f6f" InformativeScreenshot="07dc30878a66e8dc5409787e70406b05.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/frontpage.php - Ulaa' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="650, 292, 617, 262" FriendlyName="'Welcome Vinoth'" FullSelectorArgument="&lt;ctrl idx='4' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='' role='grouping' check:fulltext='Welcome Vinoth J&amp;#xD;&amp;#xA; Account Balance:&amp;#xA;        $200000 &amp;#xA; Card Details&amp;#xA;Card No. 986792318&amp;#xA;Card Expiry' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <Assign sap:VirtualizedContainerService.HintSize="510.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_10">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[check]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[check.Substring(check.IndexOf("$") + 1)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="510.4,82.4" sap2010:WorkflowViewState.IdRef="Assign_9">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[SavingsBalance]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[Cint(check)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <If Condition="[SavingsBalance&lt;500000]" sap:VirtualizedContainerService.HintSize="510.4,436.8" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="300,82.4" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_16">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[flag]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" Arguments="http://localhost/ip/project/login.php" FilePath="C:\Users\DELL\AppData\Local\Zoho\Ulaa\Application\ulaa.exe" IconBase64="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" InformativeScreenshot="bad0c54d358d58a22973579b7ca024b9.png" Selector="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='New Tab - Ulaa' /&gt;" Title="New Tab - Ulaa" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="808,5957.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="vinoth" Name="MainUserid" />
+        <Variable x:TypeArguments="x:String" Default="vinoth@2004" Name="MainMpin" />
+        <Variable x:TypeArguments="x:String" Name="check" />
+        <Variable x:TypeArguments="x:Int32" Name="Balance" />
+        <Variable x:TypeArguments="x:String" Name="amount" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: New Tab - Ulaa" sap:VirtualizedContainerService.HintSize="745.6,5496.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="712,5205.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reload'" sap:VirtualizedContainerService.HintSize="649.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="114, 64, 43, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Reload'" FullSelectorArgument="&lt;ctrl name='localhost/ip/project/login.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='localhost/ip/project/login.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" Guid="12768e41-8e18-464f-a827-8a4c8e483a5d" InformativeScreenshot="17b33d643588c14fefc186fb2c8c3535.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/login.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="69, 64, 43, 43" ElementType="Button" FriendlyName="'Forward'" FullSelectorArgument="&lt;ctrl name='localhost/ip/project/login.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Forward' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='localhost/ip/project/login.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Forward' role='push button' automationid='' check:text='Forward' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'UserId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="649.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Text="[MainUserid]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="887, 648, 236, 37" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='Enter Your UserId' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Enter Your UserId' role='editable text' automationid='' /&gt;" Guid="3fa04a77-23c8-4729-a0c3-930a6e466eaa" InformativeScreenshot="6d83d51dd502285a4b62b6def78d8f99.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/login.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="815, 652, 73, 28" ElementType="Text" FriendlyName="'UserId'" FullSelectorArgument="&lt;ctrl name='UserId:  ' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='UserId:  ' role='text' automationid='' check:text='UserId:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Mpin'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="649.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Text="[MainMpin]" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="887, 714, 236, 37" DesignTimeScaleFactor="1.25" ElementType="InputBoxPassword" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='Enter Your Mpin' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Enter Your Mpin' role='editable text' automationid='' /&gt;" Guid="6a783411-caec-4546-b55f-e082de990c6c" InformativeScreenshot="a70768e93b912ef7930bcda16575a210.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/login.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="815, 718, 73, 28" ElementType="Text" FriendlyName="'Mpin'" FullSelectorArgument="&lt;ctrl name='Mpin:    ' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Mpin:    ' role='text' automationid='' check:text='Mpin:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" sap:VirtualizedContainerService.HintSize="649.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="1042, 781, 81, 30" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;ctrl name='Login' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Login' role='push button' automationid='' check:text='Login' /&gt;" Guid="0cc4859a-df07-4f6c-994d-acd7dab3e3b4" ImageBase64="" InformativeScreenshot="e3547604584dc4541f7a613ef5b1f6f8.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/login.php - Ulaa' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" sap:VirtualizedContainerService.HintSize="649.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="932, 205, 74, 47" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;ctrl name='Next' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Next' role='push button' automationid='' check:text='Next' /&gt;" Guid="df53f7ed-bc3e-47cb-bc68-3bd9aea6b72b" InformativeScreenshot="9b666d86490d7f4378e6839efe190161.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/verify.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text 'Welcome Vinoth J'" sap:VirtualizedContainerService.HintSize="649.6,157.6" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" TextString="[check]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="688, 424, 214, 59" DesignTimeScaleFactor="1.25" FriendlyName="'Account Balance: '" FullSelectorArgument="&lt;ctrl name='?? Account Balance:         $7480500' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl role='grouping' automationid='' /&gt;" Guid="56fec244-c911-4406-bde2-e7d7009e8d0e" InformativeScreenshot="d992635611da82e5bc72660c14794ddd.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/frontpage.php - Ulaa' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="675, 342, 239, 35" FriendlyName="'Welcome Vinoth J'" FullSelectorArgument="&lt;ctrl name='Welcome Vinoth J' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Welcome Vinoth J' role='grouping' automationid='' check:text='Welcome Vinoth J' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <Assign sap:VirtualizedContainerService.HintSize="649.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_1">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[check]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[check.Substring(check.IndexOf("$") + 1)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="649.6,82.4" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Int32">[balance]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Int32">[CInt(check)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <If Condition="[balance&gt;=100000]" sap:VirtualizedContainerService.HintSize="649.6,3538.4" sap2010:WorkflowViewState.IdRef="If_1">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="616,3180" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Default="9118445" Name="SavingsAccno" />
+                      <Variable x:TypeArguments="x:String" Default="2356891" Name="TradingAccno" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="572.8,81.6" sap2010:WorkflowViewState.IdRef="Assign_15">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[Balance]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[Balance-100000]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Sequence sap:VirtualizedContainerService.HintSize="572.8,1549.6" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Fund Transfer'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="650, 823, 176, 49" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Fund Transfer'" FullSelectorArgument="&lt;ctrl name='Fund Transfer' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Fund Transfer' role='push button' automationid='' check:text='Fund Transfer' /&gt;" Guid="f1964d7f-173e-4e8b-ab2e-01fe52bd7146" ImageBase64="" InformativeScreenshot="e7bf3d89de93d2fc154eab87f9808d07.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/frontpage.php - Ulaa' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Recipient Account No'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510.4,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Text="[SavingsAccno]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="202, 165, 213, 27" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl idx='2' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='' role='editable text' /&gt;" Guid="032c6e31-80bb-4a00-b7c0-09bd585c62b5" InformativeScreenshot="e7e9b8ffe0da9ac3a89986339825bdec.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/fund.php - Ulaa' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="19, 165, 184, 23" ElementType="Text" FriendlyName="'Recipient Account No'" FullSelectorArgument="&lt;ctrl name='Recipient Account No:' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Recipient Account No:' role='text' automationid='' check:text='Recipient Account No:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <If Condition="[flag&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="510.4,525.6" sap2010:WorkflowViewState.IdRef="If_4">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_17">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[amount]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">0</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="476.8,171.2" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_18">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[amount]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">[(Balance*.30).ToString]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'spin box'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="510.4,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Text="[amount]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="161, 214, 213, 27" DesignTimeScaleFactor="1.25" FriendlyName="'spin box'" FullSelectorArgument="&lt;ctrl role='spin box' /&gt;" FuzzySelectorArgument="&lt;ctrl role='spin box' automationid='' /&gt;" Guid="50194687-cede-4627-ba70-63a6cd61dfb3" InformativeScreenshot="8878fcf4ba0d53c195b1f8a672b285ea.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/fund.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="19, 264, 81, 27" ElementType="Button" FriendlyName="'Transfer'" FullSelectorArgument="&lt;ctrl name='Transfer' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Transfer' role='push button' automationid='' check:text='Transfer' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Transfer'" sap:VirtualizedContainerService.HintSize="510.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="19, 264, 81, 27" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Transfer'" FullSelectorArgument="&lt;ctrl name='Transfer' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Transfer' role='push button' automationid='' check:text='Transfer' /&gt;" Guid="d3b269c6-0357-4c26-8e11-a4d7027b4367" InformativeScreenshot="8fd9bb91c66bca4058ab2d84c4ad3a86.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/fund.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back'" sap:VirtualizedContainerService.HintSize="572.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="9, 64, 58, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Back'" FullSelectorArgument="&lt;ctrl name='localhost/ip/project/transfer.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Back' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='localhost/ip/project/transfer.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Back' role='push button' automationid='' check:text='Back' /&gt;" Guid="ebeb473d-4afb-4171-bde7-198282ba0a48" InformativeScreenshot="e0999871ae47005c15c325182552c072.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/transfer.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="69, 64, 43, 43" ElementType="Button" FriendlyName="'Forward'" FullSelectorArgument="&lt;ctrl name='localhost/ip/project/transfer.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Forward' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='localhost/ip/project/transfer.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Forward' role='push button' automationid='' check:text='Forward' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reload'" sap:VirtualizedContainerService.HintSize="572.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="114, 64, 43, 43" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Reload'" FullSelectorArgument="&lt;ctrl name='localhost/ip/project/fund.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='localhost/ip/project/fund.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" Guid="d31085cb-b5eb-43cc-b2fd-f9dda876d6fe" InformativeScreenshot="db9b47e3c21de79d611b6a2d532e881f.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/fund.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="69, 64, 43, 43" ElementType="Button" FriendlyName="'Forward'" FullSelectorArgument="&lt;ctrl name='localhost/ip/project/fund.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Forward' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='localhost/ip/project/fund.php - Ulaa -  Personal' role='pane' /&gt;&lt;ctrl name='Forward' role='push button' automationid='' check:text='Forward' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Continue'" sap:VirtualizedContainerService.HintSize="572.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="991, 256, 112, 48" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Continue'" FullSelectorArgument="&lt;ctrl name='Confirm Form Resubmission' role='dialog' /&gt;&lt;ctrl name='Continue' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Confirm Form Resubmission' role='dialog' /&gt;&lt;ctrl name='Continue' role='push button' automationid='' check:text='Continue' /&gt;" Guid="f985a4d8-fcc0-4a53-8abe-a13a5850c67b" InformativeScreenshot="055512d12944c2a3e9c8728e7a0d9076.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/fund.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="1112, 256, 112, 48" ElementType="Button" FriendlyName="'Cancel'" FullSelectorArgument="&lt;ctrl name='Confirm Form Resubmission' role='dialog' /&gt;&lt;ctrl name='Cancel' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Confirm Form Resubmission' role='dialog' /&gt;&lt;ctrl name='Cancel' role='push button' automationid='' check:text='Cancel' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Sequence sap:VirtualizedContainerService.HintSize="572.8,786.4" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Recipient Account No'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Text="[TradingAccno]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="202, 165, 213, 27" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl idx='2' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='' role='editable text' /&gt;" Guid="032c6e31-80bb-4a00-b7c0-09bd585c62b5" InformativeScreenshot="e7e9b8ffe0da9ac3a89986339825bdec.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/fund.php - Ulaa' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="19, 165, 184, 23" ElementType="Text" FriendlyName="'Recipient Account No'" FullSelectorArgument="&lt;ctrl name='Recipient Account No:' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Recipient Account No:' role='text' automationid='' check:text='Recipient Account No:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'spin box'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Text="[(Balance*.25).ToString]" Version="V3">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="161, 214, 213, 27" DesignTimeScaleFactor="1.25" FriendlyName="'spin box'" FullSelectorArgument="&lt;ctrl role='spin box' /&gt;" FuzzySelectorArgument="&lt;ctrl role='spin box' automationid='' /&gt;" Guid="50194687-cede-4627-ba70-63a6cd61dfb3" InformativeScreenshot="8878fcf4ba0d53c195b1f8a672b285ea.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/fund.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="19, 264, 81, 27" ElementType="Button" FriendlyName="'Transfer'" FullSelectorArgument="&lt;ctrl name='Transfer' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Transfer' role='push button' automationid='' check:text='Transfer' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Transfer'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fe41234b-6bc1-4c39-8309-8ea5a3c1caa0" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable DesignTimeRectangle="19, 264, 81, 27" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Transfer'" FullSelectorArgument="&lt;ctrl name='Transfer' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Transfer' role='push button' automationid='' check:text='Transfer' /&gt;" Guid="d3b269c6-0357-4c26-8e11-a4d7027b4367" InformativeScreenshot="8fd9bb91c66bca4058ab2d84c4ad3a86.png" ScopeSelectorArgument="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='localhost/ip/project/fund.php - Ulaa' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376.8,175.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="333.6,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Insufficient Balance&quot;]" />
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1038" Arguments="http://localhost/ip/project/login.php" FilePath="C:\Users\DELL\AppData\Local\Zoho\Ulaa\Application\ulaa.exe" IconBase64="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" InformativeScreenshot="bad0c54d358d58a22973579b7ca024b9.png" Selector="&lt;wnd app='ulaa.exe' cls='Chrome_WidgetWin_1' title='New Tab - Ulaa' /&gt;" Title="New Tab - Ulaa" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="log" sap:VirtualizedContainerService.HintSize="745.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;transfered  to saving acc amount&#x9;&quot;+amount+&quot;&#x9;&quot;+System.DateTime.Now.ToString(&quot;dd-mm-yyyy hh:mm:ss&quot;)]" UseDefaultEncoding="False" />
+      <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="log" sap:VirtualizedContainerService.HintSize="745.6,134.4" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[&quot;transfered  to trading acc amount&#x9;&#x9;&quot;+(Balance*.25).ToString+&quot;&#x9;&#x9;&quot;+System.DateTime.Now.ToString(&quot;dd-mm-yyyy hh:mm:ss&quot;)]" UseDefaultEncoding="False" />
+    </Sequence>
+  </Sequence>
+</Activity>
